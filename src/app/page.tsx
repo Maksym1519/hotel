@@ -4,7 +4,7 @@ import fetchData from '@/api/fetchData';
 import { MainData } from './types/mainType';
 import RoomItem from './components/main/roomItem';
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 9;
 
 export default async function Home({ searchParams }: { searchParams: { page: string } }) {
     const myData = await fetchData();
