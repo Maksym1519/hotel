@@ -24,7 +24,7 @@
   letter-spacing: 1px;
   }
   html {
-    height: 100vh;
+    min-height: 100%;
   }
   body {
   font-family: 'Open Sans', arial, sans-serif;

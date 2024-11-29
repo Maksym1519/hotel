@@ -1,8 +1,25 @@
 import { Params } from '@/app/types/global.type';
+import fetchData from '@/api/fetchData';
 
-const Room = ({ params }: Params) => {
+type ItemType = {
+    title: string;
+    body: string;
+};
+
+const Room = async ({ params }: Params) => {
     const { roomName } = params;
-    return <div>Lux {roomName}</div>;
+    const myData = await fetchData();
+    console.log(myData);
+    const text = myData.find(
+        (item: ItemType) => decodeURIComponent(roomName) === item.title
+    );
+    
+    return (
+        <div>
+            Lux {roomName}
+            <p>{text ? text.body : 'text'}</p>
+        </div>
+    );
 };
 
 export default Room;
