@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[39],{6944:(e,r,s)=>{Promise.resolve().then(s.bind(s,6310))},6310:(e,r,s)=>{"use strict";s.r(r),s.d(r,{default:()=>t});var l=s(5155);let t=()=>(0,l.jsx)("h1",{style:{fontSize:"72px"},children:"Some error occured"})}},e=>{var r=r=>e(e.s=r);e.O(0,[441,517,358],()=>r(6944)),_N_E=e.O()}]);
