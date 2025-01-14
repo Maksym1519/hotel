@@ -1,6 +1,6 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
   "/pages/[...notFound]/page": "app/pages/[...notFound]/page.js",
-  "/pages/about/page": "app/pages/about/page.js"
+  "/pages/about/page": "app/pages/about/page.js",
+  "/page": "app/page.js"
 }
