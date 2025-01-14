@@ -19,11 +19,11 @@ const RoomItem = ({ title, body }: RoomItemType) => {
         setLiked(likeValue === 'like')
     }, [title]);
 
-    const like = () => {
-        const likeKey = getLikeKey(title)
-        localStorage.setItem(likeKey,'like')
-         setLiked(true)
-    }
+   const like = () => {
+    const likeKey = getLikeKey(title)
+    localStorage.setItem(likeKey,'like')
+    setLiked(true)
+   }
     return (
         <div className={styles.mainItem}>
             <Link href={`./pages/rooms/${title}`}>{title}</Link>
